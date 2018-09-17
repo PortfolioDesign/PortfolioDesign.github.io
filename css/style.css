@@ -28,6 +28,12 @@ button {
   color: black;
 }
 
+.title {
+  color: white;
+  font-size: 40px;
+  font-weight: 700;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -129,9 +135,6 @@ li {
 }
 
 .light-title {
-  color: white;
-  font-size: 40px;
-  font-weight: 700;
   padding-bottom: 5vh;
 }
 
@@ -139,8 +142,85 @@ li {
   color: #6e6e6e;
   font-size: 14px;
   max-width: 40%;
-  line-height: 3vh;
+  line-height: 5vh;
   padding-bottom: 5vh;
+}
+
+.play {
+  padding-top: 30vh;
+  padding-bottom: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: url("../img/play_bg.png");
+  background-size: cover;
+  background-position: center;
+}
+
+.play-content__button {
+  font-size: 100px;
+  color: white;
+}
+
+.prevArrow {
+  font-size: 40px;
+  color: white;
+  padding-left: 5vw;
+}
+
+.nextArrow {
+  padding-right: 5vw;
+  color: white;
+  font-size: 40px;
+}
+
+.service {
+  background: #1c1c1c;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-desc {
+  text-align: center;
+  padding-top: 2vh;
+  color: #6e6e6e;
+  font-size: 13px;
+  max-width: 40%;
+  font-weight: 400;
+  line-height: 4vh;
+}
+
+.service-blocks {
+  padding-top: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.service-block {
+  max-width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.service-block__title {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 25px;
+  color: white;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+}
+
+.service-block__desc {
+  color: #6e6e6e;
+  font-size: 14px;
+  line-height: 3.5vh;
 }
 
 @font-face {

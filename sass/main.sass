@@ -22,6 +22,11 @@ button
         background: white
         color: black
     
+
+.title
+    color: white
+    font-size: 40px
+    font-weight: 700
     
 a
     color: white
@@ -109,14 +114,77 @@ li
         background-position: 100% center
         width: 90%
     &-title
-        color: white
-        font-size: 40px
-        font-weight: 700
         padding-bottom: 5vh
     &-desc
         color: #6e6e6e
         font-size: 14px
         max-width: 40%
-        line-height: 3vh
+        line-height: 5vh
         padding-bottom: 5vh
+
+
+.play
+    padding-top: 30vh
+    padding-bottom: 30vh
+
+    display: flex
+    align-items: center
+    justify-content: space-between
+
+    background: url("../img/play_bg.png")
+    background-size: cover
+    background-position: center
+    &-content
+        &__button
+            font-size: 100px
+            color: white
+.prevArrow
+    font-size: 40px
+    color: white
+    padding-left: 5vw
+.nextArrow
+    padding-right: 5vw
+    color: white
+    font-size: 40px
+
+
+
+.service
+    background: #1c1c1c
+    padding-top: 10vh
+    padding-bottom: 10vh
+
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: center
+    &-desc
+        text-align: center
+        padding-top: 2vh
+        color: #6e6e6e
+        font-size: 13px
+        max-width: 40%
+        font-weight: 400
+        line-height: 4vh
+    &-blocks
+        padding-top: 10vh
+        display: flex
+        align-items: center
+        justify-content: space-around
+    &-block
+        max-width: 20%
+        display: flex
+        flex-direction: column
+        justify-content: center
+        &__title
+            text-transform: uppercase
+            font-weight: bold
+            font-size: 25px
+            color: white
+            padding-top: 5vh
+            padding-bottom: 2vh
+        &__desc
+            color: #6e6e6e
+            font-size: 14px
+            line-height: 3.5vh
 @import "fonts"
