@@ -1,257 +1,164 @@
-body {
-  font-family: Proxima;
+* {
+  font-family: OpenSans;
 }
 
+input,
 button {
-  background: none;
-  color: white;
-}
-
-.button_empty {
-  -webkit-transform: skew(170deg);
-  transform: skew(170deg);
-  border: 2px solid #ffffff;
-  padding: 14px 44px 14px 44px;
-  font-weight: bold;
-  text-transform: uppercase;
-}
-
-.button_empty span {
-  display: block;
-  -webkit-transform: skew(-170deg);
-  transform: skew(-170deg);
-}
-
-.button_empty:hover {
-  cursor: pointer;
-  background: white;
-  color: black;
-}
-
-.title {
-  color: white;
-  font-size: 40px;
-  font-weight: 700;
+  outline: none;
 }
 
 a {
-  color: white;
   text-decoration: none;
 }
 
-li {
-  list-style: none;
+button {
+  cursor: pointer;
+  background: none;
+}
+
+.button_full {
+  border: 0;
+  border-radius: 30px;
+  background-image: linear-gradient(to right, #001dff 0%, #01fafd 100%);
+  color: white;
+  padding: 20px 80px;
+  text-transform: uppercase;
+  font-weight: bold;
+  box-shadow: 0 15px 20px #c4dfff;
+}
+
+.button_empty_blue {
+  border: 2px solid #01f5fd;
+  border-radius: 30px;
+  padding: 10px 80px;
+  text-transform: uppercase;
+  color: #0c0e37;
+  font-weight: bold;
+  box-shadow: 0 15px 20px #c4dfff;
+}
+
+.button_empty {
+  border: 2px solid white;
+  border-radius: 30px;
+  padding: 20px 100px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: bold;
 }
 
 .main {
-  color: white;
-  width: 100%;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/bg.png");
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-}
-
-.main-content {
-  width: 90%;
+  width: 100%;
+  background-image: url("../img/bg_header.png");
+  background-repeat: no-repeat;
+  background-size: calc(contain + 100px);
+  background-position: calc(100% + 80px) top;
 }
 
 .header {
-  padding-right: 10px;
-  padding-left: 10px;
-  padding-top: 2vh;
-  text-transform: uppercase;
+  padding-top: 5vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-left {
+  padding-left: 2vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.header-nav a {
-  padding-right: 1vw;
+.header-lang {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  width: 5vw;
 }
 
 .header-logo {
-  font-size: 24px;
+  margin-right: 4vw;
+  display: flex;
+  align-items: center;
+  color: #0c0e37;
+  text-transform: uppercase;
   font-weight: bold;
 }
 
-.header-last {
-  display: flex;
-  width: 10%;
-  justify-content: space-around;
-  align-items: center;
+.header-logo img {
+  margin-right: 1vw;
 }
 
-.header-last__cart {
-  padding-right: 1vw;
-}
-
-.content {
-  padding-right: 10px;
-  padding-left: 10px;
-  text-align: center;
-  padding-top: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.content-title {
-  font-size: 80px;
-  max-width: 80%;
+.header-nav {
   font-weight: 700;
 }
 
-.content-desc {
-  padding-top: 5vh;
-  font-size: 13px;
-}
-
-.content-button {
-  margin-top: 5vh;
-}
-
-.light {
+.header-nav ul {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  background: #1c1c1c;
+  align-items: baseline;
 }
 
-.light-wrapper {
+.header-nav ul li {
+  list-style: none;
+}
+
+.header-nav ul li a {
+  color: white;
+  margin-left: 3vw;
+}
+
+.header-nav_last {
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.hero {
   padding-top: 20vh;
-  padding-bottom: 20vh;
-  overflow: visible;
-  background: url("../img/dron.png");
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: 100% center;
-  width: 90%;
+  padding-left: 10vw;
 }
 
-.light-title {
-  padding-bottom: 5vh;
-}
-
-.light-desc {
-  color: #6e6e6e;
-  font-size: 14px;
+.hero-title {
+  font-weight: 700;
+  color: #0c0e37;
+  font-size: 31px;
   max-width: 40%;
-  line-height: 5vh;
-  padding-bottom: 5vh;
 }
 
-.play {
-  padding-top: 30vh;
-  padding-bottom: 30vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: url("../img/play_bg.png");
-  background-size: cover;
-  background-position: center;
-}
-
-.play-content__button {
-  font-size: 100px;
-  color: white;
-}
-
-.prevArrow {
-  font-size: 40px;
-  color: white;
-  padding-left: 5vw;
-}
-
-.nextArrow {
-  padding-right: 5vw;
-  color: white;
-  font-size: 40px;
-}
-
-.service {
-  background: #1c1c1c;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.service-desc {
-  text-align: center;
-  padding-top: 2vh;
-  color: #6e6e6e;
-  font-size: 13px;
-  max-width: 40%;
-  font-weight: 400;
-  line-height: 4vh;
-}
-
-.service-blocks {
-  padding-top: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.service-block {
-  max-width: 20%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.service-block__title {
-  text-transform: uppercase;
-  font-weight: bold;
-  font-size: 25px;
-  color: white;
+.hero-desc {
   padding-top: 5vh;
-  padding-bottom: 2vh;
+  padding-bottom: 5vh;
+  color: #0c0e37;
+  font-size: 16px;
+  max-width: 40%;
 }
 
-.service-block__desc {
-  color: #6e6e6e;
-  font-size: 14px;
-  line-height: 3.5vh;
+.hero-buttons {
+  width: 100%;
+  display: flex;
+  padding-bottom: 5vh;
+}
+
+.hero-buttons .button_full {
+  margin-right: 2vw;
+}
+
+.hero-partners {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #0c0e37;
+  opacity: 0.7;
+  font-weight: 700;
 }
 
 @font-face {
-  font-family: 'Proxima';
-  src: url("../fonts/ProximaRegular.ttf") format("truetype");
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url("../fonts/OpenSans-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima';
-  src: url("../fonts/ProximaBold.ttf") format("truetype");
-  font-weight: bold;
-  font-style: normal;
-}
-@media screen and (max-width: 820px) {
-  .header {
-    justify-content: space-between;
-  }
-
-  .header-last {
-    padding-right: 10vw;
-  }
-
-  .header-nav {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 525px) {
-  .content-title {
-    font-size: 50px;
-  }
 }

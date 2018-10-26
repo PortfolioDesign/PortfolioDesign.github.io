@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css"/>
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"/>
@@ -12,70 +13,46 @@
   </head>
   <body>
     <div class="main">
-      <div class="main-content">
-        <div class="header">
-          <div class="header-logo">SUPERDONE.</div>
-          <div class="header-nav_menu"></div>
-          <div class="header-nav">
-            <ul>
-              <li><a href="#">meet the product</a><a href="#">meet the company</a><a href="#">support</a><a href="#">blog</a></li>
-            </ul>
+      <div class="header">
+        <div class="header-left">
+          <div class="header-logo"><img src="img/logo.png"/>
+            <p>bitcoin</p>
           </div>
-          <div class="header-last">
-            <div class="header-last__cart"><i class="fas fa-cart-plus"></i></div>
-            <div class="header-button">
-              <button class="button_empty"><span>Login</span></button>
-            </div>
+          <div class="header-lang">
+            <div class="header-lang__img"><img src="img/eng.png"/></div>
+            <p>Eng</p><i class="fas fa-angle-down"></i>
           </div>
         </div>
+        <div class="header-nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Pages</a></li>
+            <li class="header-nav_last"><a href="#">
+                <button class="button_empty">Sign Up</button></a></li>
+          </ul>
+        </div>
       </div>
-      <div class="content">
-        <div class="content-title title">Your Receptionist Anywhere</div>
-        <div class="content-desc">When a user taps on a button in a mobile app, and the button pulls down a navigation, that’s a microinteraction.</div>
-        <div class="content-button">
-          <button class="button_empty"><span>Buy Now</span></button>
+      <div class="hero">
+        <div class="hero-title">Powering Data for the new equity blockchain</div>
+        <div class="hero-desc">Our company specializes on Blockchain Technologies, Smart Contracts, Initial Coin Offering (ICO) and Digital Currencies Investments</div>
+        <div class="hero-buttons">
+          <button class="button_full">whitepaper</button>
+          <button class="button_empty_blue">try app</button>
+        </div>
+        <div class="hero-partners">
+          <p>our partners</p><img src="img/1.png"/><img src="img/2.png"/><img src="img/3.png"/><img src="img/4.png"/>
         </div>
       </div>
     </div>
-    <div class="light">
-      <div class="light-wrapper">
-        <div class="light-title title">Super Light Drone</div>
-        <div class="light-desc">More specifically, microinteractions are the animations and changes of the interface that happen once a user interacts with something, anything. Consider them interactive but informative animations. There are many reasons to use microinteractions. I can give you four right now.<br><br> The first good thing about microinteractions is improved usability. If the animation of the menu, from the example I gave above, slides down and over the content the user was just looking at, it provides affirmation for the user. This animation lets the user know what’s going on through visual cues.</div>
-        <div class="light-button">
-          <button class="button_empty"><span>Read more</span></button>
-        </div>
-      </div>
-    </div>
-    <div class="play">
-      <div class="prevArrow"><i class="fas fa-arrow-left"></i></div>
-      <div class="play-content">
-        <div class="play-content__button"><i class="fas fa-play-circle"></i></div>
-      </div>
-      <div class="nextArrow"><i class="fas fa-arrow-right"></i></div>
-    </div>
-    <div class="service">
-      <div class="service-title title">Super Services</div>
-      <div class="service-desc">The first good thing about microinteractions is improved usability. If the animation of the menu, from the example I gave above, slides down and over the content the user was just looking at, it provides affirmation for the user. </div>
-      <div class="service-blocks">
-        <div class="service-block">
-          <div class="service-block__icon"><img src="img/1.png" alt=""/></div>
-          <div class="service-block__title">4k resolution</div>
-          <div class="service-block__desc">More specifically, microinteractions are the animations and changes of the interface that happen once a user interacts with something, anything. Consider them interactive but informative animations. There are many reasons to use microinteractions. I can give you four right now.</div>
-        </div>
-        <div class="service-block">
-          <div class="service-block__icon"><img src="img/2.png" alt=""/></div>
-          <div class="service-block__title">timelapse</div>
-          <div class="service-block__desc">More specifically, microinteractions are the animations and changes of the interface that happen once a user interacts with something, anything. Consider them interactive but informative animations. There are many reasons to use microinteractions. I can give you four right now.</div>
-        </div>
-        <div class="service-block">
-          <div class="service-block__icon"><img src="img/3.png" alt=""/></div>
-          <div class="service-block__title">Super speed</div>
-          <div class="service-block__desc">More specifically, microinteractions are the animations and changes of the interface that happen once a user interacts with something, anything. Consider them interactive but informative animations. There are many reasons to use microinteractions. I can give you four right now.</div>
-        </div>
-      </div>
-    </div>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/anime.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

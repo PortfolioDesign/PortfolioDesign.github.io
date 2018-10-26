@@ -5,6 +5,7 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
+        link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css")
         link(rel="stylesheet", href="css/normalize.css")
         link(rel="stylesheet", href="css/style.css")
         link(rel="stylesheet", href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css")
@@ -13,61 +14,54 @@ html(lang="en")
 
     body
         .main
-            .main-content
-                .header
-                    .header-logo SUPERDONE.
-                    .header-nav_menu
-                    .header-nav
-                        ul
-                            li
-                                a(href="#") meet the product
-                                a(href="#") meet the company
-                                a(href="#") support
-                                a(href="#") blog
-                    .header-last
-                        .header-last__cart
-                            i(class="fas fa-cart-plus")
-                        .header-button
-                            button.button_empty <span>Login</span>
-            .content
-                .content-title.title Your Receptionist Anywhere
-                .content-desc When a user taps on a button in a mobile app, and the button pulls down a navigation, that’s a microinteraction.
-                .content-button
-                    button.button_empty <span>Buy Now</span>
+            .header
+                .header-left
+                    .header-logo
+                        img(src="img/logo.png")
+                        p bitcoin
+                    .header-lang
+                        .header-lang__img
+                            img(src="img/eng.png")
+                        p Eng
+                        i(class="fas fa-angle-down")
+                .header-nav
+                    ul
+                        li
+                            a(href="#") Home
+                        li
+                            a(href="#") About Us
+                        li
+                            a(href="#") Services
+                        li
+                            a(href="#") Pricing
+                        li
+                            a(href="#") Blog
+                        li
+                            a(href="#") Pages
+                        li.header-nav_last
+                            a(href="#")
+                                button.button_empty Sign Up
+            .hero
+                .hero-title Powering Data for the new equity blockchain
+                .hero-desc Our company specializes on Blockchain Technologies, Smart Contracts, Initial Coin Offering (ICO) and Digital Currencies Investments
+                .hero-buttons
+                    button.button_full whitepaper
+                    button.button_empty_blue try app
+                .hero-partners
+                    p our partners
+                    img(src="img/1.png")
+                    img(src="img/2.png")
+                    img(src="img/3.png")
+                    img(src="img/4.png")
 
-        .light
-            .light-wrapper
-                .light-title.title Super Light Drone
-                .light-desc More specifically, microinteractions are the animations and changes of the interface that happen once a user interacts with something, anything. Consider them interactive but informative animations. There are many reasons to use microinteractions. I can give you four right now.<br><br> The first good thing about microinteractions is improved usability. If the animation of the menu, from the example I gave above, slides down and over the content the user was just looking at, it provides affirmation for the user. This animation lets the user know what’s going on through visual cues.
-                .light-button
-                    button.button_empty <span>Read more</span>
 
-        .play
-            .prevArrow <i class="fas fa-arrow-left"></i>
-            .play-content
-                .play-content__button <i class="fas fa-play-circle"></i>
-            .nextArrow <i class="fas fa-arrow-right"></i>
 
-        .service
-            .service-title.title Super Services
-            .service-desc The first good thing about microinteractions is improved usability. If the animation of the menu, from the example I gave above, slides down and over the content the user was just looking at, it provides affirmation for the user. 
-            .service-blocks
-                .service-block
-                    .service-block__icon
-                        img(src="img/1.png", alt="")
-                    .service-block__title 4k resolution
-                    .service-block__desc More specifically, microinteractions are the animations and changes of the interface that happen once a user interacts with something, anything. Consider them interactive but informative animations. There are many reasons to use microinteractions. I can give you four right now.
-                .service-block
-                    .service-block__icon
-                        img(src="img/2.png", alt="")
-                    .service-block__title timelapse
-                    .service-block__desc More specifically, microinteractions are the animations and changes of the interface that happen once a user interacts with something, anything. Consider them interactive but informative animations. There are many reasons to use microinteractions. I can give you four right now.
-                .service-block
-                    .service-block__icon
-                        img(src="img/3.png", alt="")
-                    .service-block__title Super speed
-                    .service-block__desc More specifically, microinteractions are the animations and changes of the interface that happen once a user interacts with something, anything. Consider them interactive but informative animations. There are many reasons to use microinteractions. I can give you four right now.
+        
 
+
+        script(type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js")
+        script(type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js")
         script(src="js/anime.min.js")
         script(src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js")
+        script(type="text/javascript" src="js/jquery-ui.js")
         script(src="js/main.js")
