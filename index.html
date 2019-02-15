@@ -1,58 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.css"/>
-    <link rel="stylesheet" href="css/normalize.css"/>
-    <link rel="stylesheet" href="css/style.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.css"/>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous"/>
-  </head>
-  <body>
-    <div class="main">
-      <div class="header">
-        <div class="header-left">
-          <div class="header-logo"><img src="img/logo.png"/>
-            <p>bitcoin</p>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Webpack</title>
+<link href="/assets/css/app.css" rel="stylesheet"></head>
+<body>
+
+  <div class="main">
+    <div class="container">
+      <section>
+        <header>
+          <div>
+            <img src="/assets/img/logo.png" alt="Logo" class="header-logo">
           </div>
-          <div class="header-lang">
-            <div class="header-lang__img"><img src="img/eng.png"/></div>
-            <p>Eng</p><i class="fas fa-angle-down"></i>
+          <nav>
+            <ul>
+              <li>
+                <a href="#">Features</a>
+                <a href="#">Pricing</a>
+                <a href="#">Blog</a>
+                <a href="#">Contact</a>
+                <button class="btn btn-outline-auth">Login</button>
+              </li>
+            </ul>
+          </nav>
+        </header>
+        <div class="content">
+          <div class="content-text">
+            <h1 class="content-text__title title"> Grow Your business with Merkury </h1>
+            <p class="content-text__desc"> Your partner in crime! </p>
           </div>
-        </div>
-        <div class="header-nav">
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Pricing</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Pages</a></li>
-            <li class="header-nav_last"><a href="#">
-                <button class="button_empty">Sign Up</button></a></li>
-          </ul>
+          <div class="content-button">
+            <button class="btn btn-primary">Get started!</button>
+          </div>
         </div>
       </div>
-      <div class="hero">
-        <div class="hero-title">Powering Data for the new equity blockchain</div>
-        <div class="hero-desc">Our company specializes on Blockchain Technologies, Smart Contracts, Initial Coin Offering (ICO) and Digital Currencies Investments</div>
-        <div class="hero-buttons">
-          <button class="button_full">whitepaper</button>
-          <button class="button_empty_blue">try app</button>
-        </div>
-        <div class="hero-partners">
-          <p>our partners</p><img src="img/1.png"/><img src="img/2.png"/><img src="img/3.png"/><img src="img/4.png"/>
+    </section>
+  </div>
+  <section>
+  <div class="benefits">
+      <div class="container">
+        <img src="/assets/img/app.png" alt="" class="app-img">
+        <div class="benefits-blocks">
+          <div class="benefits-block">
+            <div class="benefits-block__img">
+              <img src="/assets/img/result.png" alt="">
+            </div>
+            <div class="benefits-block__text">
+              <h2 class="benefits-block__title">Manage Your Workflow</h2>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco </p>
+            </div>
+            <div class="benefits-block__btn">
+              <button class="btn btn-peaceful"> See more </button>
+            </div>
+          </div>
+          <div class="benefits-block">
+            <div class="benefits-block__img">
+              <img src="/assets/img/graphic.png" alt="">
+            </div>
+            <div class="benefits-block__text">
+              <h2 class="benefits-block__title">Analytics & Insights</h2>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+            </div>
+            <div class="benefits-block__btn">
+              <button class="btn btn-peaceful"> See more </button>
+            </div>
+          </div>
+          <div class="benefits-block">
+            <div class="benefits-block__img">
+              <img src="/assets/img/calendar.png" alt="">
+            </div>
+            <div class="benefits-block__text">
+              <h2 class="benefits-block__title">Organize Your Deadlines</h2>
+              <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco</p>
+            </div>
+            <div class="benefits-block__btn">
+              <button class="btn btn-peaceful"> See more </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script src="js/anime.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script type="text/javascript" src="js/jquery-ui.js"></script>
-    <script src="js/main.js"></script>
-  </body>
+  </section>
+
+<script type="text/javascript" src="/assets/js/app.js"></script></body>
 </html>
